@@ -15,28 +15,28 @@ from pymongo import MongoClient
 load_dotenv('config.env', override=True)
 logging.basicConfig(level=logging.INFO)
 
-api_id = os.environ.get('TELEGRAM_API', 22505271)
+api_id = os.environ.get('TELEGRAM_API', '22920744')
 if len(api_id) == 0:
     logging.error("TELEGRAM_API variable is missing! Exiting now")
     exit(1)
 
-api_hash = os.environ.get('TELEGRAM_HASH', 'c89a94fcfda4bc06524d0903977fc81e')
+api_hash = os.environ.get('TELEGRAM_HASH', '31cb93c017f265e4fa6d0ba91236b826')
 if len(api_hash) == 0:
     logging.error("TELEGRAM_HASH variable is missing! Exiting now")
     exit(1)
     
-bot_token = os.environ.get('BOT_TOKEN', '7156255687:AAEXQtlTzE8Jbwt9VD6NLfcZX08Czu7w7gQ')
+bot_token = os.environ.get('BOT_TOKEN', '7699947571:AAFYhVC3OS3VLMaDH8oBccYWYbSWAoqQ8No')
 if len(bot_token) == 0:
     logging.error("BOT_TOKEN variable is missing! Exiting now")
     exit(1)
-dump_id = os.environ.get('DUMP_CHAT_ID', '-1002062925443')
+dump_id = os.environ.get('DUMP_CHAT_ID', '-1002319340172')
 if len(dump_id) == 0:
     logging.error("DUMP_CHAT_ID variable is missing! Exiting now")
     exit(1)
 else:
     dump_id = int(dump_id)
 
-fsub_id = os.environ.get('FSUB_ID', '-1002108419450')
+fsub_id = os.environ.get('FSUB_ID', '-1002260416399')
 if len(fsub_id) == 0:
     logging.error("FSUB_ID variable is missing! Exiting now")
     exit(1)
